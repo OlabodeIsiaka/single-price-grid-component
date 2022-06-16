@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	/* ### Primary */
+
+	--Cyan: hsl(179, 62%, 43%);
+	--Bright-Yellow: hsl(71, 73%, 54%);
+
+	/* ### Neutral */
+
+	--Light-Gray: hsl(204, 43%, 93%);
+	--Grayish-Blue: hsl(218, 22%, 67%);
+}
+body {
+	background-color: var(--Light-Gray);
+	font-family: Karla, sans-serif;
+	font-size: 16px;
+	display: flex;
+    align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+.container {
+	width: 375px;
+}
+.box {
+	width: 70%;
+   
+	text-align: justify;
+}
+.box-1 {
+	background-color: white;
+	padding: 1rem 1rem 2rem 1.2rem;
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+.box-1 .p {
+	color: var(--Grayish-Blue);
+}
+.box-2 {
+	background-color: var(--Cyan);
+	padding: 1rem 1rem 0.5rem 1.2rem;
+	color: var(--Light-Gray);
+}
+.box-3 {
+	background-color: hsla(179, 62%, 43%, 0.8);
+	padding: 1rem 5rem 1.5rem 1.2rem;
+	color: var(--Light-Gray);
+	border-radius: 0 0 0.5rem 0.5rem;
+}
+.h {
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 1rem auto;
+}
+.main-h{
+    color: var(--Cyan);
+}
+.h2 {
+	font-size: 0.75rem;
+	color: var(--Bright-Yellow);
+	font-weight: 700;
+	margin-bottom: 1em;
+}
+.sign-up {
+	background-color: var(--Bright-Yellow);
+	width: 98%;
+	font-size: 0.8rem;
+	text-align: center;
+	padding: 1em;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+	border-radius: 0.3rem;
+}
+
+.p {
+	font-size: 0.7rem;
+	line-height: 1.6;
+	font-weight: 400;
+	opacity: 0.8;
+
+	/* text-indent:40px; */
+}
+.span-1 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.span-2 {
+	font-size: 0.8rem;
+	opacity: 0.5;
+}
+.flex {
+	display: flex;
+	align-items: center;
+	gap: 0.8rem;
+}
+.attribution {
+	font-size: 12px;
+	text-align: center;
+	margin-left: -6rem;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+
+}
+@media screen and (min-width :1400px) {
+   .container{
+    padding: 0;
+    /* max-width: 100%; */
+       display: grid;
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: 180px 250px;
+   
+   }
+  .box{
+    width: 100%;
+  }
+  .box-1{
+     grid-column: 1/3;
+ background-color: white;
+	padding: 1em 5em 0 1.5em;
+	border-radius: 0.5rem 0.5rem 0 0;
+  }
+   .box-1 .p br{
+        content: '';
+    }
+     .p{
+        font-size: 0.85rem;
+    }
+    .box-1 .h2 br{
+content: '';
+    }
+  .box-2{
+    grid-row: 2/3;
+      }
+   .box-2{
+    border-radius: 0 0 0 0.5rem ;
+   }
+   .box-3{
+    border-radius: 0 0 0.5em 0 ;
+   }
+  
+  .attribution{
+    margin-left: 0;
+  }
+   }
+ 
